@@ -1,0 +1,61 @@
+main {
+    font-family: "Noto Sans KR", sans-serif;
+}
+main table {
+    width: 832px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    margin: 50px;
+    /* text-align: center; */
+}
+table td {
+    border: 1px solid #fff;
+}
+/*개별*/
+main .t1 {}
+main .t1 thead {
+    color: #fff;
+    background-color: #f06;
+}
+main .t1 thead tr {}
+main .t1 thead tr th {
+    text-align: center;
+}
+main .t1 tbody {}
+main .t1 tbody tr {}
+main .t1 tbody tr td {
+    text-align: center;
+}
+main .t1 thead tr th:nth-child(1) {
+    padding: 13px 144px;
+    border-top-left-radius: 20px;
+}
+main .t1 thead tr th:nth-child(2) {
+    padding: 13px 37px;
+}
+main .t1 thead tr th:nth-child(3) {
+    padding: 13px 49px;
+}
+main .t1 thead tr th:nth-child(4) {
+    padding: 13px 37px;
+}
+main .t1 thead tr th:nth-child(5) {
+    padding: 13px 54px;
+    border-top-right-radius: 20px;
+}
+main .t1 tbody tr td:nth-child(1) {
+    padding: 16px;
+}
+main .t1 tbody tr:nth-child(2) {
+    background-color: #a5a5a5;
+    color: #f06;
+}
+main .t1 tbody tr:nth-child(4) {
+    background-color: #a5a5a5;
+}
+main .t1 tbody:nth-child(2) tr:nth-child(2) {
+    border: 2px solid #f06;
+}
+main .t1 tbody:nth-child(2) tr:nth-child(4) {
+    border: 2px solid #a5a5a5;
+}

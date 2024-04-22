@@ -1,0 +1,56 @@
+main {
+    font-family: "Noto Sans KR", sans-serif;
+    width: 859px;
+    text-align: center;
+}
+main table {
+    width: 745px;
+    /* border-style: solid; */
+}
+table th, table td {
+    border: 1px solid #aaa;
+    text-align: center;
+}
+/*개별*/
+main p {
+    font-size: 1.5em;
+    line-height: 36px;
+    letter-spacing: -4%;
+    color: #888;
+    margin-bottom: 63px;
+}
+main h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -4%;
+    margin-bottom: 9px;
+    text-align: center;
+}
+main .t1 {}
+main .t1 thead {}
+main .t1 thead tr {}
+main .t1 thead tr th {
+    background-color: #00155e;
+    color: #fff;
+    font-weight: 700;
+    padding: 14px 79px;
+}
+main .t1 tbody {}
+main .t1 tbody tr {}
+main .t1 tbody tr th {
+    font-weight: 700;
+    padding: 41px 60px;
+}
+main .t1 tbody tr .hd {
+    color: #888;
+}
+main .t1 tbody tr td:nth-child(4) {
+    font-weight: 700;
+}
+main .t1 thead tr th:nth-child(2) {
+    padding: 14px 132px;
+}
+main .t1 thead tr th:nth-child(3) {
+    padding: 14px 64px;
+}
