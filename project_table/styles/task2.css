@@ -1,0 +1,102 @@
+main {
+    font-family: "Noto Sans KR", sans-serif;
+    width: 1024px;
+    text-align: center;
+}
+main p {
+    text-align: center;
+    font-size: 2em;
+}
+main p em {
+    font-weight: 700;
+    line-height: 70px;
+}
+main .t1 {
+    width: 1024px;
+    margin-top: 50px;
+/*     background-color: aqua; */
+    /* border: 1px solid #aaa; */
+}
+main .t1 caption {
+    text-align: right;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+main .t1 thead {}
+main .t1 thead tr {}
+main .t1 thead tr th {
+    text-align: center;
+    padding: 25px 100px 25px;
+    border: 1px solid #aaa;
+    background-color: #d4d4d4;
+    border-bottom: 2px solid #000;
+}
+main .t1 thead tr th em {
+    font-weight: 700;
+}
+main .t1 tbody {}
+main .t1 tbody tr {
+    border: 1px solid #aaa;
+    border-left: 0;
+    border-right: 0;
+}
+main .t1 tbody tr td {
+    border: 1px solid #aaa;
+    padding: 20px;
+}
+main .t1 tbody tr td span {
+    background-color: #f06;
+    border-radius: 10px;
+    padding: 3px 5px;
+    font-weight: 500;
+    color: #fff;
+    margin: 20px 5px;
+}
+main .t1 tbody tr td em {
+    font-weight: 900;
+    font-size: 1.5em;
+}
+main .t1 tbody tr td:nth-child(2) {
+    color: #f06;
+}
+main .t1 tbody tr td:nth-child(2) em {
+    font-size: 1.8em;
+    color: #f06;
+}
+main .t1 tbody tr td del {
+    color: #aaa;
+    font-weight: 600;
+    margin-top: 10px;
+    display: inline-block;
+}
+main .t1 tbody tr td:nth-child(1) {
+    background-color: #d4d4d4;
+    color: #494949;
+}
+main .t1 thead tr th:nth-child(2) {
+    border: 2px solid #f06;
+    border-bottom: 2px solid #000;
+}
+main .t1 tbody tr:nth-child(5) {
+    border-bottom: 2px solid #000;
+}
+main .t1 tbody tr:nth-child(1) td:nth-child(2),
+main .t1 tbody tr:nth-child(2) td:nth-child(2), 
+main .t1 tbody tr:nth-child(3) td:nth-child(2),
+main .t1 tbody tr:nth-child(4) td:nth-child(2) {
+    border: 2px solid #f06;
+    border-bottom: 0;
+    border-top: 0;
+}
+main .t1 tbody tr:nth-child(5) td:nth-child(2) {
+    border: 2px solid #f06;
+    border-top: 0;
+}
+main .t1 thead tr th:first-child,
+main .t1 tbody tr td:first-child {
+    border-left: 0;
+}
+main .t1 thead tr th:last-child,
+main .t1 tbody tr td:last-child {
+    border-right: 0;
+}
