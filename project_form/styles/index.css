@@ -1,78 +1,101 @@
 main {
     font-family: "Noto Sans KR", sans-serif;
     width: 1024px;
-    margin: 84px 262px 115px;
+    /* background-color: lightgray; */
+    margin: 0 auto;
+}
+main > * {
+    width: 500px;
+    /* background-color: yellow; */
+    /* margin: 84px auto 0; */
+    margin-left: auto;
+    margin-right: auto;
 }
 main h1 {
-    font-weight: 900;
-    font-size: 4.38em;
-    margin: 84px 0 25px;
+    font-weight: 700;
+    font-size: 4.375rem;
+    letter-spacing: -0.2px;
+    margin-bottom: 25px;
+    margin-top: 84px;
 }
 main p {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     margin-bottom: 57px;
 }
-main #login_frm {}
+main #login_frm {
+    /* background-color: aqua; */
+}
 main #login_frm fieldset {}
 main #login_frm fieldset .skip {}
 main #login_frm fieldset dl {}
-main #login_frm fieldset dl dt {
+main #login_frm fieldset dl dt,
+main #login_frm fieldset h2 {
     font-weight: 700;
     font-size: 1.88em;
+    letter-spacing: -0.2px;
     margin-bottom: 18px;
 }
 main #login_frm fieldset dl dd {
     margin-bottom: 38px;
 }
-main #login_frm fieldset dl input {
+/* main #login_frm fieldset dl input {
 /*     border: 1px solid #aaa;
     width: 500px;
     height: 53px;
     border-radius: 10px;
-    padding: 15px 0 15px 15px; */
+    padding: 15px 0 15px 15px;
+} */
+main #login_frm fieldset dl dd input[name^=user] {
+    border: 1px solid #aaa;
+    width: 100%;
+    line-height: 53px;
+    border-radius: 10px;
+    /* padding: 15px; */
+    padding-left: 15px;
+    color: #aaa; /* input 입력 글자 색상 */
 }
-#login_frm input[type=text] {
+main #login_frm fieldset dl dd input[name^=user]::placeholder {
+    color: #ff0000;
+}
+/* main #login_frm fieldset dl dd input[type^=p] {
     border: 1px solid #aaa;
     width: 500px;
     height: 53px;
     border-radius: 10px;
     padding: 15px 0 15px 15px;
-}
-#login_frm input[type^=p] {
-    border: 1px solid #aaa;
-    width: 500px;
-    height: 53px;
-    border-radius: 10px;
-    padding: 15px 0 15px 15px;
-}
+} */
 main #login_frm fieldset h2 {
-    font-weight: 700;
-    font-size: 1.88em;
     margin-bottom: 32px;
 }
-main #login_frm fieldset .btn {}
+main #login_frm fieldset .btn {
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+}
 main #login_frm fieldset .btn #login_btn {
-    padding: 15px 228.5px;
+    width: 100%;
+    line-height: 53px;
+    /* padding: 15px 228.5px; */
     background-color: #222;
-    border-radius: 10px;
     color: #fff;
     border: 1px solid #aaa;
-    font-weight: 700;
+    border-radius: 10px;
 }
 main #login_frm fieldset .btn #google_btn {
-    padding: 15px 187.5px;
+    width: 100%;
+    line-height: 53px;
+    /* padding: 15px 177px; */
     margin-top: 18px;
     background-color: #fff;
     color: #222;
-    border-radius: 10px;
     border: 1px solid #aaa;
-    font-weight: 700;
+    border-radius: 10px;
 }
 main .join_link {
     margin-top: 62px;
-    margin-left: 54px;
+    text-align: center;
+    letter-spacing: -0.2px;
 }
 main .join_link a {
     font-weight: 700;
 }
-#login_frm {}

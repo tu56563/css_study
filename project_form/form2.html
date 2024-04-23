@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Spotify</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/form2.css">
+</head>
+<body>
+    <main>
+        <h1><a class="logo" href="#"><img src="./images/spLogo.svg.svg" alt="Spotify"></a></h1>
+        <div class="tab_title">
+            <a href="#" class="active">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+        </div>
+        <form action="#" method="post" id="login_frm">
+            <fieldset>
+                <legend class="skip">로그인양식</legend>
+                <div class="input">
+                    <input type="text" placeholder="Username" name="user_id" required><br>
+                    <input type="password" placeholder="Password" name="user_pwd">
+                </div>
+                <p class="stay">
+                    <input type="checkbox" id="sign_in" name="stay_sign" value="sign_in">
+                    <label for="sign_in">stay signed in</label>
+                </p>
+                <div class="btn">
+                    <button type="submit" id="sign_btn">SIGN IN</button>
+                </div>
+                <p class="pwd_link">
+                    <a href="#" class="forget_pw">Forget Password?</a>
+                </p>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

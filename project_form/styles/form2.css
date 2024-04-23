@@ -1,0 +1,85 @@
+body {
+    background-color: #222;
+}
+main {
+    font-family: "Noto Sans KR", sans-serif;
+    width: 1024px; margin: 0 auto;
+    /* background-color: aqua; */
+    text-align: center;  
+}
+main > * {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+main h1 {
+    margin-bottom: 87px;
+    margin-top: 97px;
+}
+main h1 .logo {}
+main .tab_title {
+    margin-bottom: 55px;
+}
+main .tab_title .active {
+    margin-right: 136px;
+    color: #fff;
+    border-bottom: 3px solid #1ed760
+}
+main .tab_title a {
+    color: #fff;
+}
+main #login_frm {}
+main #login_frm fieldset {}
+main #login_frm fieldset .skip {}
+main #login_frm fieldset .input {
+    width: 100%;
+    line-height: 73px;
+    border-radius: 36.5px;
+    border: none;
+}
+main #login_frm fieldset .input input[name^=user] {
+    width: 100%;
+    line-height: 73px;
+    border-radius: 36.5px;
+    border: none;
+}
+main #login_frm fieldset .input input[name$=pwd] {
+    margin-top: 14px;
+}
+main #login_frm fieldset .input input[name^=user]::placeholder {
+    padding-left: 40px;
+    color: #aaa;
+} 
+main #login_frm fieldset .stay {
+    margin-top: 31px;
+    text-align: left;
+    color: #fff;
+}
+main #login_frm fieldset .stay input[name^=stay] {
+    display: none;
+}
+main #login_frm fieldset .stay input[id*=sign_in]:checked + label {
+    background-image: url(/project_form/images/sp_check_box.svg);
+}
+main #login_frm fieldset .stay label[for*=sign_in] {
+    background-image: url(/project_form/images/sp_uncheck_box.svg);
+    background-repeat: no-repeat;
+    padding-left: 34px;
+}
+main #login_frm fieldset .btn {
+    margin-top: 33px;
+    margin-bottom: 14px;
+}
+main #login_frm fieldset .btn #sign_btn {
+    background-color: #1ed760;
+    width: 100%;
+    line-height: 73px;
+    border-radius: 36.5px;
+    border: none;
+    font-weight: 700;
+    color: #fff;
+}
+main #login_frm fieldset .pwd_link {}
+main #login_frm fieldset .pwd_link .forget_pw {
+    color: #fff;
+}
