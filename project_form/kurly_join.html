@@ -30,7 +30,7 @@
                 <dl>
                     <dt>아이디<span>*</span></dt>
                     <dd><input type="text" name="user_id" placeholder="아이디를 입력해주세요"></dd>
-                    <dd><button type="button" id="user_password">중복확인</button></dd>
+                    <dd><button type="button" id="user_id_check">중복확인</button></dd>
                     <dt>비밀번호<span>*</span></dt>
                     <dd><input type="text" name="user_pwd" placeholder="비밀번호를 입력해주세요"></dd>
                     <dd></dd>
@@ -53,7 +53,7 @@
                             <option value="LG_2">LG알뜰폰</option>
                             <option value="SKT_2">SKT알뜰폰</option>
                         </select>
-                        <input type="text" name="" placeholder="숫자만 입력해주세요 예)01012345678">
+                        <input type="text" name="tele_num" placeholder="숫자만 입력해주세요 예)01012345678">
                     </dd>
                     <dd><button type="button" id="user_cer_number">인증번호받기</button></dd>
                     <dt>주소<span>*</span></dt>
@@ -65,7 +65,7 @@
                     <dt>성별</dt>
                     <dd>
                         <input type="radio" id="male" name="gender" value="male"><label for="male">남자</label>
-                        <input type="radio" id="female" name="gender" value="female"><label for="female">여자</label>
+                        <input type="radio" id="female" name="gender" value="female" checked><label for="female">여자</label>
                         <input type="radio" id="none" name="gender" value="none"><label for="none">선택안함</label>
                     </dd>
                     <dd></dd>

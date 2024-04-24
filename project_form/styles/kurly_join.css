@@ -45,10 +45,14 @@ main #join_frm .user_info {}
 main #join_frm .user_info .skip {}
 main #join_frm .user_info dl {
     overflow: hidden;
+    background-color: #0004ff;
+    width: 612px;
+    margin-left: 206px;
 }
 main #join_frm .user_info dl dt {
     background-color: yellow;
     float: left;
+    width: 120px;
 }
     
 main #join_frm .user_info dl dt span {
@@ -57,16 +61,98 @@ main #join_frm .user_info dl dt span {
 main #join_frm .user_info dl dd {
     background-color: lime;
     font-size: 0.875rem;
+    float: left;
+    width: 300px;
 }
-main #join_frm .user_info dl dd:nth-child(3) {
-    background-color: aqua;
-}
-main #join_frm .user_info dl dd:nth-child(3)
-main #join_frm .user_info dd input[type=text] {
+main #join_frm .user_info dl dd input[type=text] {
     width: 300px;
     height: 40px;
-    border-radius: 5px;
     border: 1px solid #aaa;
+    border-radius: 5px;
+    /* margin-bottom: 10px; */
 }
-main #join_frm .user_info dd .telecom {}
-main .sign_in {}
+main #join_frm .user_info dl dd:nth-child(3) {
+    /* background-color: red; */
+    float: right;
+    width: 120px;
+}
+main #join_frm .user_info dl dd:nth-child(15) {
+    float: right;
+    width: 120px;
+}
+main #join_frm .user_info dl dd:nth-child(18) {
+    float: right;
+    width: 120px;
+}
+main #join_frm .user_info dd select {
+    width: 50px;
+    height: 40px;
+}
+main #join_frm .user_info dl dd input[name=tele_num] {
+    width: 245px;
+}
+/* main #join_frm .user_info dd select[name=telecom] {
+    display: none;
+} */
+main #join_frm .user_info dl dd button[id=user_id_check] {
+    width: 120px;
+    height: 40px;
+    background-color: #9E00B7;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+}
+main #join_frm .user_info dl dd button[id=user_mail_check] {
+    width: 120px;
+    height: 40px;
+    background-color: #9E00B7;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+}
+main #join_frm .user_info dl dd button[id=user_cer_number] {
+    width: 120px;
+    height: 40px;
+    background-color: #ccc;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+}
+main #join_frm .user_info dl dd button[id=user_address] {
+    width: 300px;
+    height: 43px;
+    background-color: #fff;
+    border: 1px solid #9E00B7;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+main #join_frm .user_info dl dd span {
+    color: #aaa;
+}
+main #join_frm .user_info dl dd input[type=radio] {
+    display: none;
+}
+main #join_frm .user_info dl dd input[type=radio] + label {
+    display: inline-block;
+    background-image: url(../images/gender_unchecked.svg);
+    background-repeat: no-repeat;
+    padding-left: 21px;
+}
+main #join_frm .user_info dl dd input[type=radio]:checked + label {
+    background-image: url(../images/gender_checked.svg);
+}
+main #join_frm .user_info dl dd label {
+    margin-top: 20px;
+}
+main .sign_in {
+    text-align: center;
+}
+main .sign_in button[id=sign_btn] {
+    width: 200px;
+    height: 40px;
+    background-color: #9E00B7;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
