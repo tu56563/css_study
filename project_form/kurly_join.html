@@ -46,12 +46,12 @@
                     <dt>휴대폰<span>*</span></dt>
                     <dd>
                         <select name="telecom">
-                            <option value="KT">KT</option>
-                            <option value="LG">LG</option>
-                            <option value="SKT">SKT</option>
-                            <option value="KT_2">KT알뜰폰</option>
-                            <option value="LG_2">LG알뜰폰</option>
-                            <option value="SKT_2">SKT알뜰폰</option>
+                            <option value="kt">KT</option>
+                            <option value="lg">LG</option>
+                            <option value="skt">SKT</option>
+                            <option value="kt_2">KT알뜰폰</option>
+                            <option value="lg_2">LG알뜰폰</option>
+                            <option value="skt_2">SKT알뜰폰</option>
                         </select>
                         <input type="text" name="tele_num" placeholder="숫자만 입력해주세요 예)01012345678">
                     </dd>
@@ -71,11 +71,11 @@
                     <dd></dd>
                     <dt>생년월일</dt>
                     <dd>
-                        <input type="text" name="year" placeholder="YYYY">
+                        <input type="number" name="birthday_year" maxlength="4" placeholder="YYYY">
                         <span>/</span>
-                        <input type="text" name="month" placeholder="MM">
+                        <input type="number" name="birthday_month" maxlength="2" placeholder="MM">
                         <span>/</span>
-                        <input type="text" name="day" placeholder="DD">
+                        <input type="number" name="birthday_day" maxlength="2" placeholder="DD">
                     </dd>
                     <dd></dd>
                 </dl>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의집</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/zip.css">
+</head>
+<body>
+    <main>
+        <h1>회원가입</h1>
+        <p>SNS 계정으로 간편하게 회원가입</p>
+        <div class="logo">
+            <a href="#"><img src="./images/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="./images/kakao.png" alt="kakaotalk"></a>
+            <a href="#"><img src="./images/naver.png" alt="naver"></a>
+        </div>
+        <form action="#" method="post" id="login_frm">
+            <fieldset class="user_info">
+                <legend class="skip">회원 가입 양식</legend>
+                <div class="user_mail">
+                    <h2>이메일</h2>
+                    <input type="text" name="user_email" placeholder="이메일">
+                    <img src="./images/alternate_email.svg" alt="">
+                    <select name="email_list">
+                        <option value="pick">선택해주세요</option>
+                        <option value="naver">naver.com</option>
+                        <option value="google">google.com</option>
+                        <option value="daum">daum.net</option>
+                        <option value="nate">nate.com</option>
+                    </select>
+                </div>
+                <button type="button" id="email_check_btn">
+                    이메일 인증하기
+                </button>
+                    <div class="user_pwd">
+                        <h2>비밀번호</h2>
+                        <p>영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</p>
+                        <input type="text" name="user_password" placeholder="비밀번호">
+                    </div>
+                    <div class="user_pwd_check">
+                        <h2>비밀번호 확인</h2>
+                        <input type="text" name="user_password_check" placeholder="비밀번호 확인">
+                    </div>
+                    <div class="user_nickname">
+                        <h2>닉네임</h2>
+                        <p>다른 유저와 겹치지 않도록 해주세요. (2~20자)</p>
+                        <input type="text" name="nick_name" placeholder="별명 (2~20자)">
+                    </div>
+            </fieldset>
+            <fieldset class="agreement">
+                <legend class="skip">약관동의</legend>
+                <h2>약관동의</h2>
+                <div class="agreement_check">
+                    <div class="agreement_check_1">
+                        <input type="checkbox" id="all_agree" value="all_agree"><label for="all_agree">전체동의 <span>선택항목에 대한 동의 포함</span></label>
+                    </div>
+                    <div class="agreement_check_2">
+                        <input type="checkbox" id="all_agree_2" value="all_agree_2"><label for="all_agree_2">만 14세 이상입니다 <span>필수</span></label>
+                    </div>
+                    <div class="agreement_check_3">
+                        <input type="checkbox" id="all_agree_3" value="all_agree_3"><label for="all_agree_3">이용약관 <span>필수</span></label>
+                    </div>
+                    <div class="agreement_check_4">
+                        <input type="checkbox" id="all_agree_4" value="all_agree_4"><label for="all_agree_4">개인정보수집 및 이용동의 <span>필수</span></label>
+                    </div>
+                    <div class="agreement_check_5">
+                        <input type="checkbox" id="all_agree_5" value="all_agree_5"><label for="all_agree_5">개인정보 마케팅 활용 동의 <em>선택</em></label>
+                    </div>
+                    <div class="agreement_check_6">
+                        <input type="checkbox" id="all_agree_6" value="all_agree_6"><label for="all_agree_6">이벤트, 쿠폰, 특가 알림 메일 및 SNS 등 수신 <em>선택</em></label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="sign_in">
+                <button type="button">회원가입하기</button>
+                <p class="sign_login">
+                    이미 아이디가 있으신가요? <a href="#" class="login_stroke">로그인</a>
+                </p>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

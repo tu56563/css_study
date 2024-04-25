@@ -1,0 +1,240 @@
+main * {   
+    font-family: "Noto Sans KR", sans-serif;
+}
+main {
+    width: 400px; margin: 20px auto;
+    /* background-color: cadetblue; */
+}
+main h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+main p {
+    font-size: 0.875rem;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+main > p {
+    text-align: center;
+}
+main .logo {
+    margin-left: 110px;
+}
+main .logo a {
+    margin-right: 30px;
+}
+main #login_frm {
+    /* background-color: blueviolet; */
+    width: 360px; margin: 20px auto;
+}
+main #login_frm .user_info {}
+main #login_frm .user_info h2 {
+    font-weight: 700;
+}
+main #login_frm .user_info input {
+    padding-left: 10px;
+    font-size: 0.625rem;
+}
+main #login_frm .user_info .user_mail {
+    border-top: 1px solid #aaa;
+    margin-top: 35px;
+}
+main #login_frm .user_info .user_mail h2 {
+    margin-top: 28px;
+}
+main #login_frm .user_info .user_mail input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+main #login_frm .user_info input[type=text] {
+    width: 360px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+main #login_frm .user_info .user_mail input[type=text] {
+    width: 168px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+main #login_frm .user_info .user_mail img {}
+main #login_frm .user_info .user_mail select {
+    appearance: none;
+    background-image: url(../images/arrow_drop_down.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 168px;
+    height: 30px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 0.625rem;
+}
+main #login_frm .user_info .user_mail .email_list {}
+main #login_frm .user_info .user_mail .email_list option {}
+main #login_frm .user_info button {
+    width: 360px;
+    height: 40px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #e3e3e3;
+    color: #aaa;
+}
+main #login_frm .user_info .user_pwd {}
+main #login_frm .user_info .user_pwd h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+main #login_frm .user_info .user_pwd p {}
+main #login_frm .user_info .user_pwd input {}
+main #login_frm .user_info .user_pwd_check {}
+main #login_frm .user_info .user_pwd_check h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+main #login_frm .user_info .user_pwd_check input {}
+main #login_frm .user_info .user_nickname {}
+main #login_frm .user_info .user_nickname h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+main #login_frm .user_info .user_nickname h2 p {}
+main #login_frm .user_info .user_nickname input {}
+/* 약관동의 */
+main #login_frm .agreement {
+    /* background-color: aqua; */
+}
+main #login_frm .agreement h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+main #login_frm .agreement_check {
+    /* background-color: lime; */
+}
+main #login_frm .agreement_check span {
+    font-size: 0.625rem;
+    color: #09e;
+}
+main #login_frm .agreement_check em {
+    font-size: 0.625rem;
+    color: #aaa;
+}
+main #login_frm .agreement .agreement_check_1 {
+    /* background-color: blue; */
+    margin-bottom: 14px;
+    margin-top: 14px;
+}
+main #login_frm .agreement .agreement_check_2 {
+    margin-bottom: 14px;
+}
+main #login_frm .agreement .agreement_check_3 {
+    margin-bottom: 14px;
+}
+main #login_frm .agreement .agreement_check_4 {
+    margin-bottom: 14px;
+}
+main #login_frm .agreement .agreement_check_5 {
+    margin-bottom: 14px;
+}
+main #login_frm .agreement .agreement_check_1 input[type=checkbox] {
+    display: none;
+}
+main #login_frm .agreement .agreement_check_2 input[type=checkbox] {
+    display: none;
+}
+main #login_frm .agreement .agreement_check_3 input[type=checkbox] {
+    display: none;
+}
+main #login_frm .agreement .agreement_check_4 input[type=checkbox] {
+    display: none;
+}
+main #login_frm .agreement .agreement_check_5 input[type=checkbox] {
+    display: none;
+}
+main #login_frm .agreement .agreement_check_6 input[type=checkbox] {
+    display: none;
+}
+main #login_frm .agreement .agreement_check label {
+    font-size: 0.875rem;
+}
+main #login_frm .agreement .agreement_check_1 input[type=checkbox] + label {
+    background-image: url(../images/check_box_outline_blank.svg);
+    background-repeat: no-repeat;
+    padding-left: 29px;
+} 
+main #login_frm .agreement .agreement_check_2 input[type=checkbox] + label {
+    background-image: url(../images/check_box_outline_blank.svg);
+    background-repeat: no-repeat;
+    padding-left: 29px;
+}  
+main #login_frm .agreement .agreement_check_3 input[type=checkbox] + label {
+    background-image: url(../images/check_box_outline_blank.svg);
+    background-repeat: no-repeat;
+    padding-left: 29px;
+}  
+main #login_frm .agreement .agreement_check_4 input[type=checkbox] + label {
+    background-image: url(../images/check_box_outline_blank.svg);
+    background-repeat: no-repeat;
+    padding-left: 29px;
+}  
+main #login_frm .agreement .agreement_check_5 input[type=checkbox] + label {
+    background-image: url(../images/check_box_outline_blank.svg);
+    background-repeat: no-repeat;
+    padding-left: 29px;
+} 
+main #login_frm .agreement .agreement_check_6 input[type=checkbox] + label {
+    background-image: url(../images/check_box_outline_blank.svg);
+    background-repeat: no-repeat;
+    padding-left: 29px;
+} 
+main #login_frm .agreement .agreement_check_1 input[type=checkbox]:checked + label {
+    background-image: url(../images/check_box.svg);
+    padding-left: 29px;
+}
+main #login_frm .agreement .agreement_check_2 input[type=checkbox]:checked + label {
+    background-image: url(../images/check_box.svg);
+    padding-left: 29px;
+}
+main #login_frm .agreement .agreement_check_3 input[type=checkbox]:checked + label {
+    background-image: url(../images/check_box.svg);
+    padding-left: 29px;
+}
+main #login_frm .agreement .agreement_check_4 input[type=checkbox]:checked + label {
+    background-image: url(../images/check_box.svg);
+    padding-left: 29px;
+}
+main #login_frm .agreement .agreement_check_5 input[type=checkbox]:checked + label {
+    background-image: url(../images/check_box.svg);
+    padding-left: 29px;
+}
+main #login_frm .agreement .agreement_check_6 input[type=checkbox]:checked + label {
+    background-image: url(../images/check_box.svg);
+    padding-left: 29px;
+}
+main #login_frm .agreement .agreement_check label span {
+}
+main #login_frm .sign_in {}  
+main #login_frm .sign_in button {
+    width: 360px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #09e;
+    color: #fff;
+    border: 0;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 23px;
+}  
+main #login_frm .sign_in .sign_login {
+    color: #aaa;
+    text-align: center;
+}  
+main #login_frm .sign_in .sign_login a {
+    color: #000;
+    border-bottom: 1px solid #000;
+    font-weight: 700;
+    font-size: 0.875rem;
+}  
