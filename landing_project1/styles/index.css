@@ -1,0 +1,120 @@
+main {}
+/* 배경 공통&개별값 */
+main .bg {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main .bg1 {
+    background-image: url(../images/bg.jpg);
+    height: 1005px;
+}
+/* ------------------1.표지 */
+main .bg1 section {
+    width: 1250px; margin: 0 auto;
+    /* background-color: tomato; */
+}
+main .bg1 section h1 {}
+main .bg1 section h1 a {}
+main .bg1 section h1 a img {}
+main .bg1 section h2 {
+    text-align: center;
+    font-size: 4.375rem;
+    line-height: 1.2;
+    letter-spacing: -0.2px;
+    color: #fff;
+    margin: 148px 0 45px;
+}
+main .bg1 section h2 em {
+    font-weight: 700;
+}
+main .bg1 section .sponsor_link::after {
+    content: '';
+    background-image: url(../images/btn_right_arrow.svg);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-left: 10px;
+}
+main .bg1 section .sponsor_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 2.125rem;
+    font-weight: 700;
+    /* 0% #fe9300, 100% #ff7300 */
+    /* CSS 회전각도단위 deg */
+    background: linear-gradient(90deg, #fe9300, #ff7300);
+    /* gradient적용을 위해 background통합속성을 사용했을 때
+    해당 요소 추가 배경이미지를 꾸미기 원한다면 
+    가상선택자(before,after)를 활용하는것을 권장한다. */
+    width: 409px; height: 71px;
+    /* line-height: 71px; */ 
+    border-radius: 50px;
+    /* text-align: center; */
+    color: #fff;
+}
+main .bg1 section .sponsor_question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    background-color: #050505;
+    color: #fff;
+    width: 417px; height: 42px;
+/*     text-align: center;
+    line-height: 42px; */
+    border-radius: 50px;
+    font-size: 1.625rem;
+    margin-top: 240px;
+}
+main .bg1 section .sponsor_question::before,
+main .bg1 section .sponsor_question::after {
+    content: '';
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 24px; 
+    height: 24px;
+    background-size: 24px;
+}
+main .bg1 section .sponsor_question::before {
+    background-image: url(../images/icon_sms.svg);
+    margin-right: 10px;
+}
+main .bg1 section .sponsor_question::after {
+    background-image: url(../images/btn_right_arrow.svg);
+    margin-left: 10px;
+}
+/* -----------------2-퀴즈 */
+main .bg2 {
+    background-image: url(../images/bg_2.jpg);
+    height: 500px;
+}
+main .bg2 section {
+    width: 1250px; margin: 0 auto;
+    background-color: tomato;
+}
+main .bg2 section #quiz_frm {}
+main .bg2 section #quiz_frm .quiz_contents {}
+main .bg2 section #quiz_frm .quiz_contents h2 {
+    font-size: 3.438rem;
+    font-weight: 700;
+    letter-spacing: -0.1px;
+    margin-top: 49px;
+}
+main .bg2 section #quiz_frm .quiz_contents p  {}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list {}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li {}
+main .bg2 section .quiz_person {
+    float: right;
+}
+main .bg2 section .quiz_person .status {}
+main .bg2 section .quiz_person .status h2 {}
+main .bg2 section .quiz_person .status .contents {}
+main .bg2 section .quiz_person .status .contents em {}
+main .bg2 section .quiz_person .status .contents span {}
+main .bg2 section .quiz_person .status .contents strong {}
+main .bg2 section .quiz_person p {
+    color: #fff;
+}
