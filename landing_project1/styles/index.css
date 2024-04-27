@@ -93,28 +93,102 @@ main .bg2 {
 }
 main .bg2 section {
     width: 1250px; margin: 0 auto;
-    background-color: tomato;
+    /*   */
 }
-main .bg2 section #quiz_frm {}
-main .bg2 section #quiz_frm .quiz_contents {}
+main .bg2 section #quiz_frm {
+    float: left;
+    /* background-color: aqua; */
+}
+main .bg2 section #quiz_frm .quiz_contents {
+    color: #fff;
+    font-size: 1.25rem;
+}
 main .bg2 section #quiz_frm .quiz_contents h2 {
     font-size: 3.438rem;
     font-weight: 700;
     letter-spacing: -0.1px;
     margin-top: 49px;
+    margin-left: 200px;    
 }
-main .bg2 section #quiz_frm .quiz_contents p  {}
+main .bg2 section #quiz_frm .quiz_contents p  {
+    margin-top: 48px
+}
 main .bg2 section #quiz_frm .quiz_contents .quiz_list {}
 main .bg2 section #quiz_frm .quiz_contents .quiz_list li {}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li input[type=radio] {
+    display: none;
+    }
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li input[type=radio] + label {
+    display: inline-block;
+    background-image: url(../images/quiz_unchecked.svg);
+    background-repeat: no-repeat;
+    padding-top: 14px;
+}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li input[type=radio]:checked + label {
+    background-image: url(../images/quiz_checked.svg);
+}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li label {
+    margin-top: 15px;
+    padding-left: 50px;
+}
+main .bg2 section #quiz_frm .quiz_contents p button {
+    background-color: #050505;
+    color: #fff;
+    border: none;
+    width: 458px;
+    height: 38px;
+    border-radius: 50px;
+    font-size: 1.0rem;
+}
+    
 main .bg2 section .quiz_person {
     float: right;
+    margin-top: 125px;
+    color: #fff;
 }
 main .bg2 section .quiz_person .status {}
-main .bg2 section .quiz_person .status h2 {}
-main .bg2 section .quiz_person .status .contents {}
-main .bg2 section .quiz_person .status .contents em {}
-main .bg2 section .quiz_person .status .contents span {}
-main .bg2 section .quiz_person .status .contents strong {}
+main .bg2 section .quiz_person .status h2 {
+    text-align: center;
+    font-size: 1.625rem;
+    font-weight: 500;
+    background: #ff7300;
+    font-weight: 58px;
+    width: 400px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url(../images/icon_person.svg);
+    background-position: 25%;
+    background-repeat: no-repeat;
+    padding-left: 52px;
+}
+main .bg2 section .quiz_person .status .contents {
+    background-color: #fff;
+    color: #ff7300;
+    width: 400px;
+    line-height: 142px;
+    letter-spacing: -0.7px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 18px;
+}
+main .bg2 section .quiz_person .status .contents em {
+    font-size: 3.438rem;
+    font-weight: 700;
+}
+main .bg2 section .quiz_person .status .contents span {
+    font-weight: 700;
+    font-size: 2.125rem;
+    
+}
+main .bg2 section .quiz_person .status .contents strong {
+    font-weight: 700;
+    font-size: 2.125rem;
+    color: #050505;
+}
 main .bg2 section .quiz_person p {
-    color: #fff;
+    text-align: right;
 }
