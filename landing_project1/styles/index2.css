@@ -86,107 +86,107 @@ main .bg1 section .sponsor_question::after {
     background-image: url(../images/btn_right_arrow.svg);
     margin-left: 10px;
 }
-/* -----------------2-퀴즈 */
+/* ---------------------퀴즈 */
 main .bg2 {
     background-image: url(../images/bg_2.jpg);
     height: 500px;
 }
 main .bg2 section {
-    width: 1250px; margin: 0 auto;
-    /*   */
+    display: flex;
+}
+main .bg2 section > * {
+    flex: 1; /* width: 50%; */
 }
 main .bg2 section #quiz_frm {
-    float: left;
     /* background-color: aqua; */
+    /* padding: 54px 0 55px; */
 }
 main .bg2 section #quiz_frm .quiz_contents {
-    color: #fff;
-    font-size: 1.25rem;
+    margin-left: 335px;
 }
 main .bg2 section #quiz_frm .quiz_contents h2 {
     font-size: 3.438rem;
-    font-weight: 700;
     letter-spacing: -0.1px;
-    margin-top: 49px;
-    margin-left: 200px;
-    margin-bottom: 48px;    
+    font-weight: 600;
+    margin-top: 54px; margin-bottom: 48px;
+    width: 450px; text-align: center;
 }
-main .bg2 section #quiz_frm .quiz_contents p  {
-    margin-top: 15px
+main .bg2 section #quiz_frm .quiz_contents h2+p {
+    font-size: 1.25rem; line-height: 1.7;
 }
-main .bg2 section #quiz_frm .quiz_contents .quiz_list {}
-main .bg2 section #quiz_frm .quiz_contents .quiz_list li {}
-main .bg2 section #quiz_frm .quiz_contents .quiz_list li input[type=radio] {
+main .bg2 section #quiz_frm .quiz_contents .quiz_list {
+    margin-bottom: 15px;
+}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li {
+    margin-bottom: 20px;
+}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li:last-child {
+    margin: 0;
+}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li input[name=quiz_q] {
     display: none;
-    }
-main .bg2 section #quiz_frm .quiz_contents .quiz_list li input[type=radio] + label {
-    display: inline-block;
+}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li label {
     background-image: url(../images/quiz_unchecked.svg);
     background-repeat: no-repeat;
     padding-left: 48px; line-height: 30px;
+    display: inline-block;
 }
-main .bg2 section #quiz_frm .quiz_contents .quiz_list li input[type=radio]:checked + label {
+main .bg2 section #quiz_frm .quiz_contents .quiz_list+p {
+    margin: 0 0 55px;
+}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list+p #answer_btn {
+    background-color: #050505; color: #fff;
+    border-radius: 50px; width: 450px; line-height: 39px;
+    border: none;
+}
+/* 퀴즈 인풋 체크 활성화 라벨디자인 */
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li input[name=quiz_q]:checked + label {
     background-image: url(../images/quiz_checked.svg);
 }
-main .bg2 section #quiz_frm .quiz_contents .quiz_list li label {
-    margin-top: 15px;
-    /* padding-left: 50px; */
+/* 퀴즈2-2 */
+main .bg2 section .quiz_participation {
+    /* background-color:brown; */
+    padding-top: 138px;
+    display: flex; flex-flow: column wrap;
+    align-items: flex-end;
 }
-main .bg2 section #quiz_frm .quiz_contents .quiz_list li:last-child {
-    margin: 0; 
+main .bg2 section .quiz_participation .status {
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
 }
-main .bg2 section #quiz_frm .quiz_contents p button {
-    background-color: #050505;
+main .bg2 section .quiz_participation .status h2 {
+    background-color: #fe9300;
+    font-size: 1.625rem; color: #fff;
+    /* text-align: center; */ line-height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .bg2 section .quiz_participation .status h2::before {
+    background-image: url(../images/icon_person.svg);
+        /* 비포&애프터에 반드시 들어가는 속성 4가지 */
+    content: ''; display: inline-block;
+    width: 42px; height: 42px;
+}
+main .bg2 section .quiz_participation .status .contents {
+    background-color: #fff; text-align: center;
+    padding: 38px 0;
+}
+main .bg2 section .quiz_participation .status .contents em {
+    font-size: 4.375rem; font-weight: 700; letter-spacing: -0.2px;
+    color: #ff9300;
+}
+main .bg2 section .quiz_participation .status .contents span {
+    color: #fe9300;
+}
+main .bg2 section .quiz_participation .status .contents span,
+main .bg2 section .quiz_participation .status .contents strong {
+    font-size: 2.125rem; font-weight: 700;
+}
+main .bg2 section .quiz_participation .status .contents strong {}
+main .bg2 section .quiz_participation p {
+    margin-top: 18px; font-size: 1.25rem;
     color: #fff;
-    border: none;
-    width: 458px;
-    height: 38px;
-    border-radius: 50px;
-    font-size: 1.0rem;
 }
-    /*----------------------- 퀴즈2 */
-    main .bg2 section .quiz_person {
-        /* background-color:brown; */
-        padding-top: 138px;
-        display: flex; flex-flow: column wrap;
-        align-items: flex-end;
-    }
-    main .bg2 section .quiz_person .status {
-        width: 400px;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-    main .bg2 section .quiz_person .status h2 {
-        background-color: #fe9300;
-        font-size: 1.625rem; color: #fff;
-        /* text-align: center; */ line-height: 58px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    main .bg2 section .quiz_person .status h2::before {
-        background-image: url(../images/icon_person.svg);
-            /* 비포&애프터에 반드시 들어가는 속성 4가지 */
-        content: ''; display: inline-block;
-        width: 42px; height: 42px;
-    }
-    main .bg2 section .quiz_person .status .contents {
-        background-color: #fff; text-align: center;
-        padding: 38px 0;
-    }
-    main .bg2 section .quiz_person .status .contents em {
-        font-size: 4.375rem; font-weight: 700; letter-spacing: -0.2px;
-        color: #ff9300;
-    }
-    main .bg2 section .quiz_person .status .contents span {
-        color: #fe9300;
-    }
-    main .bg2 section .quiz_person .status .contents span,
-    main .bg2 section .quiz_person .status .contents strong {
-        font-size: 2.125rem; font-weight: 700;
-    }
-    main .bg2 section .quiz_person .status .contents strong {}
-    main .bg2 section .quiz_person p {
-        margin-top: 18px; font-size: 1.25rem;
-        color: #fff;
-    }

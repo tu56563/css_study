@@ -1,0 +1,109 @@
+main {}
+main .bg {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main .bg1 {
+    background-color: #000;
+    background-image: url(../images/Mask_group.png);
+    height: 1000px;
+}
+main .bg1 section {
+    width: 1250px;
+    margin: 0 auto;
+}
+main .bg1 section h1 {
+    color: #fff;
+    font-size: 4.375rem;
+    font-weight: 700;
+    padding-top: 183px;
+    line-height: 120%;
+}
+main .bg1 section .logo_3d {
+    float: right;
+}
+main .bg1 section h2 {
+    padding-top: 50px;
+}
+main .bg1 section h2 > img {}
+main .bg1 section a {
+    display: flex;
+    color: #fff;
+    font-size: 2.125rem;
+    background-color: #1DD660;
+    width: 339px;
+    height: 71px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+main .bg2 {
+    background-color: #2D47B8;
+    height: 1000px;
+}
+main .bg2 section > * {
+    flex: 1;
+}
+main .bg2 section {
+    /* width: 1250px; margin: 0 auto; */
+    display: flex;
+}
+main .bg2 section #quiz_frm {
+    margin-left: 335px;
+}
+main .bg2 section #quiz_frm .quiz_contents {
+    color: #fff;
+}
+main .bg2 section #quiz_frm .quiz_contents h2 {
+    color: #1DD660;
+    font-weight: 700;
+    font-size: 3.438rem;
+    margin-top: 164px;
+}
+main .bg2 section #quiz_frm .quiz_contents p {
+    margin-top: 30px;
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 120%;
+}
+main .bg2 section #quiz_frm .quiz_list {}
+main .bg2 section #quiz_frm .quiz_list li {
+    font-size: 1.625rem;
+}
+main .bg2 section #quiz_frm .quiz_list li input[type=radio] {
+    display: none;
+}
+main .bg2 section #quiz_frm .quiz_list li input[type=radio] + label {
+    display: inline-block;
+    background-image: url(../images/check_box_outline_blank.svg);
+    background-repeat: no-repeat;
+    padding-left: 58px;
+    line-height: 48px;
+}
+main .bg2 section #quiz_frm .quiz_list li input[type=radio]:checked + label {
+    background-image: url(../images/check_box.svg);
+}
+main .bg2 section #quiz_frm .quiz_list li label {
+    margin-top: 40px;
+}
+/* main .bg2 section #quiz_frm .quiz_list li label:last-child {
+    margin-top: 0;
+} */
+main .bg2 section #quiz_frm .quiz_contents p button {
+    background-color: #1DD660;
+    border: none;
+    width: 648px;
+    height: 71px;
+    border-radius: 30px;
+    color: #fff;
+}
+main .bg2 section .quiz_artist {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    margin-top: 100px;
+}
+main .bg2 section .quiz_artist img {
+    margin-right: 150px;
+}
