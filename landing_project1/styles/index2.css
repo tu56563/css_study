@@ -3,6 +3,12 @@ main {}
 main .bg {
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    /* bg cover란? 배경이미지가 적용된 요소의 크기에 자동으로 가로세로
+    크기를 맞춰 채운다는 뜻 */
+}
+main .bg > section {
+    width:1250px; margin:0 auto; background-color:purple;
 }
 main .bg1 {
     background-image: url(../images/bg.jpg);
@@ -190,3 +196,42 @@ main .bg2 section .quiz_participation p {
     margin-top: 18px; font-size: 1.25rem;
     color: #fff;
 }
+main .bg5 {
+    height: 1002px;
+}
+main .bg5 section {}
+main .bg5 section .sub_title {}
+main .bg5 section p {}
+main .bg5 section .img_group {
+    display: flex;
+    flex-flow: row wrap;
+}
+main .bg5 section .img_group .box_img1 {
+    background-image: url(../images/box_img1.jpg);
+    width: 387px; height: 320px;
+    flex-flow: column wrap;
+}
+main .bg5 section .img_group .box_img1 h2 {
+    color: #fff;
+}
+main .bg5 section .img_group .box_img1 p {
+}
+main .bg5 section .img_group .contents p {
+    background-color: #fff;
+}
+main .bg5 section .img_group .box_img2 {
+    background-image: url(../images/box_img2.jpg);
+    width: 387px; height: 320px;
+    flex-flow: column wrap;
+}
+main .bg5 section .img_group .box_img2 h2 {}
+main .bg5 section .img_group .box_img2 p {}
+main .bg5 section .img_group .contents p {}
+main .bg5 section .img_group .box_img3 {
+    background-image: url(../images/box_img3.jpg);
+    width: 387px; height: 320px;
+    flex-flow: column wrap;
+}
+main .bg5 section .img_group .box_img3 h2 {}
+main .bg5 section .img_group .box_img3 p {}
+main .bg5 section .img_group p {}

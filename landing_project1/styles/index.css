@@ -1,12 +1,45 @@
 main {}
-/* 배경 공통&개별값 */
+/* 배경 공통&개별값 + 공통 제목*/
 main .bg {
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    /* bg cover란? 배경이미지가 적용된 요소의 크기에 자동으로 가로세로
+    크기를 맞춰 채운다는 뜻 */
+}
+main .bg > section {
+    width:1250px; margin:0 auto; background-color:purple;
 }
 main .bg1 {
     background-image: url(../images/bg.jpg);
     height: 1005px;
+}
+/* ----------------------1. 표지 */
+main .bg section .sub_title {
+    font-size: 3.438rem;
+    font-weight: 700;
+    letter-spacing: -0.1px;
+    color: #fff;
+    line-height: 1.2;
+}
+main .bg section .sponsor_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 2.125rem;
+    font-weight: 700;
+    /* 0% #fe9300, 100% #ff7300 */
+    /* CSS 회전각도단위 deg */
+    background: linear-gradient(90deg, #fe9300, #ff7300);
+    /* gradient적용을 위해 background통합속성을 사용했을 때
+    해당 요소 추가 배경이미지를 꾸미기 원한다면 
+    가상선택자(before,after)를 활용하는것을 권장한다. */
+    width: 409px; height: 71px;
+    /* line-height: 71px; */ 
+    border-radius: 50px;
+    /* text-align: center; */
+    color: #fff;
 }
 /* ------------------1.표지 */
 main .bg1 section {
@@ -36,25 +69,7 @@ main .bg1 section .sponsor_link::after {
     display: inline-block;
     margin-left: 10px;
 }
-main .bg1 section .sponsor_link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    font-size: 2.125rem;
-    font-weight: 700;
-    /* 0% #fe9300, 100% #ff7300 */
-    /* CSS 회전각도단위 deg */
-    background: linear-gradient(90deg, #fe9300, #ff7300);
-    /* gradient적용을 위해 background통합속성을 사용했을 때
-    해당 요소 추가 배경이미지를 꾸미기 원한다면 
-    가상선택자(before,after)를 활용하는것을 권장한다. */
-    width: 409px; height: 71px;
-    /* line-height: 71px; */ 
-    border-radius: 50px;
-    /* text-align: center; */
-    color: #fff;
-}
+
 main .bg1 section .sponsor_question {
     display: flex;
     justify-content: center;
@@ -104,9 +119,7 @@ main .bg2 section #quiz_frm .quiz_contents {
     font-size: 1.25rem;
 }
 main .bg2 section #quiz_frm .quiz_contents h2 {
-    font-size: 3.438rem;
-    font-weight: 700;
-    letter-spacing: -0.1px;
+
     margin-top: 49px;
     margin-left: 200px;
     margin-bottom: 48px;    
@@ -190,3 +203,144 @@ main .bg2 section #quiz_frm .quiz_contents p button {
         margin-top: 18px; font-size: 1.25rem;
         color: #fff;
     }
+    /* -----------------3.동영상 */
+    main .bg3 {
+        background-image: url(../images/bg_3.jpg);
+    }
+    main .bg3 section {
+        padding: 133px 0 274px;
+        text-align: center;
+        /* background-color: #ff9300; */
+    }
+    main .bg3 section .sub_title {
+        color: #050505;
+    }
+    main .bg3 section #video {
+        width: 900px;
+        padding: 70px 0 70px;
+    }
+    main .bg3 section .sponsor_link {}
+/* ------------------------4.50% */
+main .bg4 {
+    background-image: url(../images/bg_4.jpg);
+    height: 1090px;
+} 
+main .bg4 section{
+    padding: 126px 0;
+} 
+main .bg4 section .sub_title {} 
+main .bg4 section .sub_title span {
+    color: #050505;
+    background-color: #fff;
+    display: inline-block;
+    padding: 10px 0;
+    font-weight: 700;
+} 
+main .bg4 section .sub_title+p{
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    margin: 45px 0 24px;
+} 
+main .bg4 section p:last-child {} 
+main .bg4 section p:last-child img {} 
+/* ---------------------5.빙하 */
+main .bg5 {
+    height: 1002px;
+    background-image: url(../images/bg_5.jpg);
+}
+main .bg5 section {
+    padding: 93px 0 122px;
+}
+main .bg5 section .sub_title {
+    color: #050505;
+    text-align: center;
+}
+main .bg5 section .sub_title+p {
+    font-size: 1.625rem;
+    line-height: 1.2;
+    margin: 12px 0 77px;
+    text-align: center;
+}
+main .bg5 section .container {
+    /* background-color: aqua; */
+    display: flex;
+}
+main .bg5 section .container li {
+    background-color: #fff;
+    flex: 1;
+    margin-right: 45px;
+    text-align: center;
+}
+main .bg5 section .container li:last-child {
+    margin: 0;
+}
+main .bg5 section .container li .bg {
+    height: 320px;
+    padding-top: 45px;
+}
+main .bg5 section .container li .bg h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 2.688rem;
+    font-weight: 700;
+}
+main .bg5 section .container li .bg p {
+    color: #fff;
+    font-size: 1.625rem;
+}
+main .bg5 section .container li .contents {
+    height: 250px;
+    padding: 10px 8px 0;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    letter-spacing: -0.2px;
+}
+/* 5.빙하감소(개별bg설정) */
+main .bg5 section .container li:nth-child(1) .bg {
+    background-image: url(../images/box_img1.jpg);
+}
+main .bg5 section .container li:nth-child(2) .bg {
+    background-image: url(../images/box_img2.jpg);
+}
+main .bg5 section .container li:nth-child(3) .bg {
+    background-image: url(../images/box_img3.jpg);
+}
+/* -------------------6.위기 */
+main .bg6 {
+    background-image: url(../images/bg_6.jpg);
+    height: 1090px;
+}
+main .bg6 section {}
+main .bg6 section .sub_title {}
+main .bg6 section .sub_title span {}
+main .bg6 section .sub_title+p {}
+main .bg6 section p:last-child {}
+main .bg6 section p:last-child img {}
+/* ----------------4,6 그룹선택자 --------------*/
+main .bg4 section,
+main .bg6 section {
+    padding: 126px 0;
+} 
+main .bg4 section .sub_title {} 
+main .bg4 section .sub_title span,
+main .bg6 section .sub_title span {
+    color: #050505;
+    background-color: #fff;
+    display: inline-block;
+    padding: 10px 0;
+    font-weight: 700;
+} 
+main .bg4 section .sub_title+p,
+main .bg6 section .sub_title+p {
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    margin: 45px 0 24px;
+}
+/* --------------7.wwf  */
+main .bg7 {
+    background-image: url(../images/bg_7.jpg);
+}

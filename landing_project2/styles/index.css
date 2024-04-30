@@ -41,6 +41,7 @@ main .bg1 section a {
 main .bg2 {
     background-color: #2D47B8;
     height: 1000px;
+    background-image: url(../images/bg_2.png);
 }
 main .bg2 section > * {
     flex: 1;
@@ -106,4 +107,13 @@ main .bg2 section .quiz_artist {
 }
 main .bg2 section .quiz_artist img {
     margin-right: 150px;
+}
+/* ----------------------pg_3 */
+main .bg3 {
+    height: 1000px;
+    background: linear-gradient(180deg, #1DD660, #000000);
+}
+main .bg3 section {
+    width: 1250px;
+    margin: 0 auto;
 }
