@@ -1,0 +1,115 @@
+#app {
+    width: 375px; height: 812px;
+    margin: 30px auto;
+    border: 1px solid black;
+    padding-top: 42px;
+}
+/* ================top, logo */
+#app .top {
+    border: 1px solid black;
+    height: 56px;
+    padding: 16px;
+    margin-bottom: 33px;
+}
+#app .top .prev {
+    display: inline-block;
+    width: 24px; height: 24px;
+    overflow: hidden;
+    background-color: gray;
+}
+#app .top .prev img {}
+#app h1 {
+    width: 100px; height: 40px;
+    background-color: gray;
+    margin: 0 auto 30px;
+}
+#app h1 a {}
+#app h1 a img {}
+#app .keyboard_g {
+    border: 1px solid black;
+    margin: 0 0 16px; padding: 0 16px;
+    /* text-align: right; */
+    display: flex;
+    justify-content: flex-end;
+}
+#app .keyboard_g a {
+    font-size: 0.75rem;
+    display: flex; /* a(container) 글자,img(item) */
+    align-items: center
+}
+#app .keyboard_g a img {
+    width: 16px; height: 16px;
+    background-color: gray;
+}
+/* ==================form */
+#app #login_frm {}
+#app #login_frm .login_g {
+    
+}
+#app #login_frm .login_g ul {
+    
+}
+#app #login_frm .login_g ul li {
+    border: 1px solid black;
+    width: 343px;
+    height: 56px;
+    display: flex;
+    justify-items: center;
+    padding-left: 16px;
+    margin-left: 16px;
+    overflow: hidden;
+}
+#app #login_frm .login_g ul li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#app #login_frm .login_g ul li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#app #login_frm .login_g ul li input[name^=user] {
+    border: 0; outline: none;
+    /* background-color: aqua; */
+    margin-left: 40px;
+    width: 100%;
+    /* input,button은 inline요소자만 css에서 크기를 인식한다 */    
+}
+#app #login_frm .login_g ul li input[name$=id] {}
+#app #login_frm .login_g ul li input[name$=pw] {}
+#app #login_frm .login_g .btn {
+/*     margin-top: 10px;
+    margin-left: 16px; */
+    margin: 0 16px;
+}
+#app #login_frm .login_g .btn #login_btn {
+    padding: 16px 0; width: 100%;
+    margin-top: 10px;
+    /* button 안쪽 글자는 기본 정렬이 가운데이다 */
+}
+/* ==========로그인 오류 출력 시 메세지(기본숨김) */
+#app #login_frm .login_g .error_message {
+    display: none; /* 초기숨김 */
+    font-size: 0.75rem;
+    margin: 16px 0;
+    padding-left: 16px;
+}
+/* =================찾기, 가입 */ 
+#app .search_join {
+    margin-top: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#app .search_join a {
+    font-size: 0.75rem;
+    display: flex;
+}
+#app .search_join a::after {
+    content: ''; display: block;
+    width: 1px; height: 10px; background-color: black;
+    margin: 0 8px;
+}
+#app .search_join a:last-child::after {
+    display: none;
+    /* margin: 0; */
+}

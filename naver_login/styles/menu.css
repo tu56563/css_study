@@ -1,0 +1,137 @@
+#app {
+    width: 375px; height: 812px; /* 와이어프레임 기준 임시높이값 */
+    border: 1px solid black; /* 경계 구분용 */
+    margin: 30px auto 0;
+    padding-top: 42px;
+    /* nav 하단 고정 필요 속성 */
+    position: relative;
+}
+/* ======================header */
+#app header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px; height: 56px;
+    border: 1px solid black;
+}
+#app header h1 {
+    font-size: 1.25rem;
+}
+#app header .right {
+    display: flex;
+}
+#app header .right a {
+    background-color: gray;
+    width: 24px; height: 24px;
+    margin-left: 16px;
+}
+#app header .right a:first-child{
+    margin: 0;
+}
+/* =====================main */
+#app main {}
+#app main .adver {}
+#app main .adver1 {
+    background-color: gray;
+    height: 56px;
+}
+#app main > h2 {
+    margin: 41px 0 21px;
+    padding-left: 16px;
+    font-size: 1.25rem;
+}
+#app main h2 > a {}
+#app main h2 > a em {
+    font-weight: 700;
+}
+#app main > .category {
+    margin: 0 16px 16px; border: 1px solid black;
+    display: flex; flex-flow: row wrap;
+    padding: 10px;
+}
+#app main > .category a {
+    border: 1px solid gray;
+    width: calc(100% / 4);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0 0 24px;
+}
+#app main > .category a:nth-child(5),
+#app main > .category a:nth-child(6),
+#app main > .category a:nth-child(7),
+#app main > .category a:nth-child(8) {
+    margin: 0;
+}
+#app main > .category a img {
+    width: 42px; height: 42px;
+    border: 1px solid black;
+    margin: 0 0 5px;
+}
+#app main > .category a span {
+    font-size: 0.75rem;
+}
+#app main .notice {
+    padding: 16px; margin: 0 0 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+#app main .notice img {
+    width: 24px; height: 24px; 
+    border: 1px solid black;
+    margin-right: 16px;
+}
+#app main .notice a {
+    font-size: 0.75rem;
+}
+#app main .adver2 {
+    height: 100px; background-color: gray;
+    margin: 0 0 21px
+}
+#app main .service_wrap {}
+#app main .service_wrap .top {
+    padding: 10px 16px; border: 1px solid black;
+    display: flex; justify-content: space-between;
+    margin-bottom: 10px;
+}
+#app main .service_wrap .top h2 {}
+#app main .service_wrap .top .search {
+    display: flex;
+    align-items: center;
+}
+#app main .service_wrap .top .search img {
+    width: 16px; height: 16px;
+    border: 1px solid gray;
+    margin-right: 10px;
+}
+#app main .service_wrap .top .search span {
+    font-size: 0.75rem;
+}
+#app main .service_wrap h3 {
+    border: 1px solid black;
+    padding: 10px 16px;
+    font-size: 0.75rem;
+    margin-bottom: 16px;
+}
+#app main .news_category {
+    border: 1px solid black;
+    margin: 0 16px;
+    display: flex;
+    flex-flow: row wrap;
+}
+#app main .news_category a {
+    border: 1px solid gray;
+    width: calc(100% / 2);
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+#app main .news_category a img {
+    width: 24px; height: 24px;
+    background-color: gray;
+    margin-right: 5px;
+}
+#app main .news_category a span {
+    font-size: 0.875rem;
+}
