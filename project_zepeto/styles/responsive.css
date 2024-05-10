@@ -9,6 +9,7 @@
     main .million {width: 100%;}
     main .million .million_img img {width: calc((100% / 4) - 10px);}
     main .million .million_img img:last-child {display: none;}
+    .f_bg footer {padding: 0 16px;}
 }/* 761~1300 */
 @media screen and (max-width: 760px){
     header h1 {width: 225.75px;}
@@ -29,4 +30,6 @@
     main .million p {font-size: 1.0rem;}
     main .million .million_img img {width: calc((100% / 3) - 10px);}
     main .million .million_img img:nth-last-child(2) {display: none;}
+    .f_bg footer .f_top {flex-flow: column;}
+    .f_bg footer .f_top .f_menu {margin-bottom: 10px;}
 }/* ~760 */

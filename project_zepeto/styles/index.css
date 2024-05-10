@@ -166,7 +166,7 @@ main .world section .wd_contents li .more {
 }
 /* =======================4.밀리언 */
 main .million {
-    background-color: yellow;
+    /* background-color: yellow; */
     width: 1300px; margin: 150px auto; text-align: center;
 }
 main .million h2 {
@@ -177,7 +177,7 @@ main .million p {
     margin: 50px 0;
 }
 main .million .million_img {
-    background-color: lime;
+    /* background-color: lime; */
     padding: 0 16px;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
@@ -185,3 +185,42 @@ main .million .million_img {
 main .million .million_img img {
     width: 240px;
 }
+/* ====================footer */
+.f_bg {
+    background-color: #f5f5f5;
+    padding: 80px 0;
+}
+.f_bg footer {
+    max-width: 1300px; margin: 0 auto;
+    /* border: 2px solid red; */
+}
+.f_bg footer .f_top {
+    margin-bottom: 24px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.f_bg footer .f_top .f_menu {}
+.f_bg footer .f_top .f_menu a {
+    margin-right: 24px;
+}
+.f_bg footer .f_top .f_menu a:last-child {
+    margin: 0;
+}
+.f_bg footer .lang_sns {
+    display: flex; flex-flow: row nowrap;
+}
+.f_bg footer .lang_sns #lang_select {
+    appearance: none; outline: none;
+    padding: 0 10px; height: 25px; border-radius: 5px;
+    background-image: url(../images/circle-down-regular.svg);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position-y: 5px;
+    background-position-x: 58px;
+}
+.f_bg footer .lang_sns #lang_select option {}
+.f_bg footer .lang_sns .sns {
+    margin-left: 12px;
+}
+.f_bg footer .lang_sns .sns img {}
+.f_bg footer .copy {}
