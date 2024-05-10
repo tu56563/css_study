@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        header {
+            min-width: 360px;
+            background-color: #000;
+            height: 80px;
+            padding: 0 16px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header h1 {
+            width: 301px;
+        }
+        header h1 a {}
+        header h1 a img {
+            width: 100%;
+        }
+        header nav {}
+        header nav a {
+            color: #fff;
+            font-size: 1.25rem;
+            margin-right: 24px;
+        }
+        header nav a:last-child {
+            margin: 0;
+        }
+        header nav a:hover {
+            color: #bbb;
+        }
+        header .snb {
+            display: flex;
+        }
+        header .snb a:first-child {
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            line-height: 39px;
+            margin-right: 24px;
+            padding: 0 10px;
+        }
+        header .snb a:first-child:hover {
+            border-color: #bbb;
+            color: #bbb;
+        }
+        header .snb a:last-child {
+            width: 36px;
+            filter: invert(1);
+        }
+        header .snb a:last-child:hover {
+            filter: invert(1) opacity(50%);
+        }
+        header .snb img {}
+        main {}
+        main .visual {
+            height: 720px;
+            overflow: hidden;
+            position: relative;
+            /* border: 5px solid red; */
+        }
+        main .visual video {
+            width: 100%;
+        }
+        main .visual .visual_title {
+            position: absolute;
+            left: 0px; top: 243px;
+            width: 100%;
+            text-align: center;
+        }
+        main .visual .visual_title h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.2;
+            margin-bottom: 40px;
+        }
+        main .visual .visual_title .start_link {
+            background-color: #000;
+            color: #fff;
+            border-radius: 10px;
+            width: 160px; line-height: 54px;
+            display: inline-block;
+        }
+        main .visual .visual_title .start_link:hover {
+            border-radius: 20px;
+            background-color: #bbb;
+        }
+        /* ======================2 */
+        main .creater {
+            /* background-color: aqua; */
+            width: 1300px;
+            text-align: center;
+            margin: 150px auto 0;
+        }
+        main .creater h2 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        main .creater h2+p {
+            margin: 55px 0;
+        }
+        main .creater .text {
+            font-size: 1.25rem;
+            line-height: 1.5;
+        }
+        main .creater .img {
+            width: 697px;
+            margin: 0 auto 55px;
+        }
+        main .creater .img img {
+            width: 100%;
+        }
+        main .creater .contents {
+            /* background-color: yellow; */
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        main .creater .contents dl {
+            width: calc(100% / 3);
+        }
+        main .creater .contents dl dt {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        main .creater .contents dl dd {
+            font-size: 1.25rem;
+            margin: 16px 0 0;
+        }
+        /* 3.제페토세상 */
+        main .world {
+    background-color: #f5f5f5;
+    padding: 150px 0;
+    margin: 150px 0 0;
+        }
+        main .world section {
+            width: 1300px; margin: 0 auto; text-align: center;
+            background-color: aqua;
+        }
+        main .world section h2 {
+            font-size: 3rem; font-weight: 700;
+        }
+        main .world section > p {
+            font-size: 1.25rem; line-height: 1.5; margin: 50px 0;
+        }
+        main .world section .wd_contents {
+            border: 2px solid red;
+            padding: 0 16px;
+            display: flex; flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+        main .world section .wd_contents li {
+            background-color: #fff; border: 2px solid blue;
+            width: calc((100% / 3) - 20px); 
+            /* 내용 높낮이가 서로 다르므로 높이 고정 */
+            height: 350px;
+            border-radius: 15px;
+            padding-top: 66.5px;
+        }
+        main .world section .wd_contents li h3 {
+            font-size: 1.5rem; font-weight: 700;
+        }
+        main .world section .wd_contents li p {
+            margin: 40px 0; line-height: 1.7;
+        }
+        main .world section .wd_contents li .more {
+            background-color: #000; color: #fff;
+            line-height: 54px; padding: 0 25px; border-radius: 20px;
+            display: inline-block;
+        }
+        /* ===============4.million */
+        main .million {
+            background-color: yellow;
+            width: 1300px; margin: 150px auto; text-align: center;
+        }
+        main .million h2 {
+            font-size: 3rem; font-weight: 700;
+        }
+        main .million p {
+            font-size: 1.25rem; line-height: 1.5;
+            margin: 50px 0;
+        }
+        main .million .million_img {
+            background-color: lime;
+            padding: 0 16px;
+            display: flex; flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+        main .million .million_img img {
+            width: 240px;
+        }
+        /* 반응형웹 */
+        @media screen and (max-width: 1300px){
+            header nav {display: none;}
+            main .visual video {width: 1300px;}
+            main .creater {width: 100%;}
+            main .world section {width: 100%;}
+            main .million {width: 100%;}
+            main .million .million_img img {width: calc((100% / 4) - 10px);}
+            main .million .million_img img:last-child {display: none;}
+        }/* 761~1300 */
+        @media screen and (max-width: 760px){
+            header h1 {width: 225.75px;}
+            main .creater .bg{width: 100%;}
+            main .creater .contents {flex-flow: row wrap;}
+            main .creater .contents dl {width:calc(100% / 2)}
+            main .creater .contents dl:last-child {width: 100%;}
+            main .world section .wd_contents {flex-flow: column;}
+            main .world section .wd_contents li {
+                width: 100%; height: 150px; padding-top: 0;
+                display: flex; padding: 0 50px;
+                justify-content: space-between; flex-flow: row nowrap;
+                align-items: center;
+            }
+            main .world section .wd_contents li:nth-child(2) {margin: 10px 0;}
+            main .world section .wd_contents li p {margin: 0;}
+            main .million h2 {font-size: 2.188rem;}
+            main .million p {font-size: 1.0rem;}
+            main .million .million_img img {width: calc((100% / 3) - 10px);}
+            main .million .million_img img:nth-last-child(2) {display: none;}
+        }/* ~760 */
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="#"><img src="./images/logo_zepeto_white.png" alt="zepeto"></a></h1>
+        <nav>
+            <a href="#">콘텐츠</a>
+            <a href="#">크리에이터 프로그램</a>
+            <a href="#">비즈니스</a>
+            <a href="#">가이드</a>
+            <a href="#">지원</a>
+        </nav>
+        <div class="snb">
+            <a href="#">콘텐츠 관리</a>
+            <a href="#"><img src="./images/bell-regular.svg" alt="알림서비스"></a>
+        </div>
+    </header>
+    <main>
+        <div class="visual">
+            <video src="./bg.mp4" autoplay loop muted></video>
+            <div class="visual_title">
+                <h2>상상하는 모든 것.<br>제페토 스튜디오에서</h2>
+                <a href="#" class="start_link">시작하기</a>
+            </div>
+        </div>
+        <div class="creater">
+            <h2>크리에이터를 위한 제페토.</h2>
+            <p class="text">제페토 크리에이터는 제페토 세상의 모든 것을 직접 만들 수 있습니다.<br>전 세계 3억 유저에게 당신의 아이디어를 보여주세요!</p>
+            <p class="img"><img src="./images/img_creators.png" alt=""></p>
+            <div class="contents">
+                <dl>
+                    <dt>6800만</dt>
+                    <dd>스튜디오 아이템 판매량</dd>
+                </dl>
+                <dl>
+                    <dt>230만</dt>
+                    <dd>스튜디오 크리에이터 수</dd>
+                </dl>
+                <dl>
+                    <dt>3억</dt>
+                    <dd>제페토 가입자 수</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="world"><!-- bg -->
+            <section><!-- 1300px fixed -->
+                <h2>제페토 세상이 내 손안에.</h2>
+                <p>아이템, 월드, 라이브까지.<br>제페토는 크리에이터가 아이디어를 펼칠 수 있는 최고의 플랫폼입니다.</p>
+                <ul class="wd_contents">
+                    <li>
+                        <h3>아이템</h3>
+                        <p>패션 아이템을 만들고<br>수익을 창출하세요.</p>
+                        <a href="#" class="more">더 알아보기</a>
+                    </li>
+                    <li>
+                        <h3>월드</h3>
+                        <p>제페토 세상에<br>내 아이디어가 담긴<br>월드를 만드세요</p>
+                        <a href="#" class="more">더 알아보기</a>
+                    </li>
+                    <li>
+                        <h3>라이브</h3>
+                        <p>전 세계 유저들과<br>실시간 방송하세요.</p>
+                        <a href="#" class="more">더 알아보기</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!-- 4. 3억명 크리에이터 -->
+        <div class="million">
+            <h2>3억 명을 사로잡을 크리에이터가 될 기회.</h2>
+            <p>230만이 넘는 제페토 크리에이터가 전 세계 3억 유저에게 아이디어를 선보이고 있습니다.<br>제페토의 대표 크리에이터를 바로 만나보세요.</p>
+            <div class="million_img">
+                <img src="./images/img_slider_01.png" alt="">
+                <img src="./images/img_slider_02.png" alt="">
+                <img src="./images/img_slider_03.png" alt="">
+                <img src="./images/img_slider_04.png" alt="">
+                <img src="./images/img_slider_05.png" alt="">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

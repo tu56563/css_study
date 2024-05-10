@@ -1,10 +1,11 @@
-main {}
+main {
+    background-color: #000;
+}
 main .bg {
     background-position: center;
     background-repeat: no-repeat;
 }
 main .bg1 {
-    background-color: #000;
     background-image: url(../images/Mask_group.png);
     height: 1000px;
 }
@@ -26,17 +27,12 @@ main .bg1 section h2 {
     padding-top: 50px;
 }
 main .bg1 section h2 > img {}
-main .bg1 section a {
-    display: flex;
-    color: #fff;
-    font-size: 2.125rem;
-    background-color: #1DD660;
-    width: 339px;
-    height: 71px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    margin-top: 50px;
+main .bg1 section .store {
+    margin-top: 52px;
+}
+main .bg1 section .play_store {}
+main .bg1 section .app_store {
+    padding-left: 36px;
 }
 main .bg2 {
     background-color: #2D47B8;
@@ -111,7 +107,6 @@ main .bg2 section .quiz_artist img {
 /* ----------------------pg_3 */
 main .bg3 {
     height: 1000px;
-    background: linear-gradient(180deg, #1DD660, #000000);
 }
 main .bg3 section {
     width: 1250px;

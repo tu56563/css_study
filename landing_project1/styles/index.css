@@ -343,4 +343,72 @@ main .bg6 section .sub_title+p {
 /* --------------7.wwf  */
 main .bg7 {
     background-image: url(../images/bg_7.jpg);
+    height: 869px;
+}
+main .bg7 section {
+    text-align: center;
+}
+main .bg7 section .sub_title {
+    color: #050505;
+}
+main .bg7 section p {
+    font-size: 2.125rem;
+    margin: 80px 0 40px;
+    line-height: 1.5;
+}
+/* ================bg8.다양한 활동 */
+main .bg8 {}
+main .bg8 section {
+    padding: 185px 0 77px;
+}
+main .bg8 section .sub_title {
+    text-align: center; margin: 0 0 83px;
+}
+main .bg8 section .container {
+    display: flex; justify-content: space-between;
+}
+main .bg8 section .container > * {
+    width: calc((100% - 40px) / 2);
+}
+main .bg8 section .container .left {
+    background-color: aqua; /* flex: 1; */
+}
+main .bg8 section .container .left li { 
+    height: 212px; background-color: orange;
+}
+main .bg8 section .container .left li:first-child {
+    margin: 0 0 22px;
+    background-image: url(../images/wwf_img1.jpg);
+}
+main .bg8 section .container .left li:last-child {
+    background-image: url(../images/wwf_img2.jpg);
+}
+main .bg8 section .container .right {
+    background-color: lime; /* flex: 1; */
+    background-image: url(../images/wwf_img3.jpg);
+    height: 443px;
+}
+/* =================bg8 공통 dl dt dd */
+main .bg8 section .container .left li,
+main .bg8 section .container .right {
+    position: relative;
+}
+main .bg8 section .container /* 중간부모생략 */ dl {
+    background-color: rgba(5,5,5,0.5);
+    position: absolute; left: 0; bottom: 30px;
+    /* absolute 설정 요소는 블록 요소여도 inline-block처럼
+    내용 크기만큼만 인식한다 */
+    /* absolute 설정 요소의 기본 너비100%를 유지하고 싶다면
+    absolute는 inline-block처럼 너비를 내용만큼만 인식하니까
+    반드시 width:100%를 추가로 입력해서 적용해야 한다 */
+    padding: 15px;
+}
+main .bg8 section .container dl * {color: #fff;}
+main .bg8 section .container dl dt {
+    font-size: 2.125rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+main .bg8 section .container dl dd {
+    font-size: 1.25rem;
 }
