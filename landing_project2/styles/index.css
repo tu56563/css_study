@@ -260,5 +260,155 @@ main .bg8 section p {
 }
 main .bg8 section img {}
 /* =-===================pg-9 */
+main .bg9 {
+    background-color: #000;
+    height: 1000px;
+}
+main .bg9 section {
+    width: 1250px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+main .bg9 section h2 {
+    font-size: 2.125rem;
+    font-weight: 700;
+    padding: 132px 0 10px;
+}
+main .bg9 section h3 {
+    font-size: 1.625rem;
+}
+main .bg9 section .container {
+    margin-top: 118px;
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+}
+main .bg9 section .container li {
+    background-color: #fff;
+    width: 485px;
+    height: 521px;
+    color: #000;
+    padding-left: 24px;
+    padding-top: 40px;
+    padding: 40px 0 10px 24px;
+}
+main .bg9 section .container li h4 {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+main .bg9 section .container li h5 {
+    padding: 11px 0 20px;
+}
+main .bg9 section .container li .start {
+    padding-bottom: 40px;
+    background-color: #1DD660;
+    height: 44px;
+    width: 437px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    padding: 12px 0;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+main .bg9 section .container li > p {
+    margin-bottom: 12px;
+    line-height: 32px;
+    background-image: url(../images/checkbox.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+}
+main .bg9 section .container li > p span {
+    margin-left: 36px;
+}
 /* =-===================pg-10 */
+main .bg10 {
+    background-color: #D9D9D9;
+    height: 500px;
+}
+main .bg10 section {
+    width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+}
+main .bg10 section h2 {
+    font-size: 2.125rem;
+    font-weight: 700;
+    padding: 78px 0 49px;
+}
+main .bg10 section h3 {
+    font-size: 1.563rem;
+}
+main .bg10 section h3:nth-child(3) {
+    margin: 29px 0;
+}
+main .bg10 section h3:nth-child(4) {
+    margin-bottom: 39px;
+}
+main .bg10 section h3 > a {
+    margin-left: 5px;
+}
+main .bg10 section p {
+    line-height: 150%;
+}
+main .bg10 section p a {}
+main .bg10 section p a span {
+    color: #1DD660;
+}
 /* =-===================footer */
+footer {
+    background-color: #000;
+    height: 500px;
+}
+footer section {
+    width: 1250px;
+    margin: 0 auto;
+    color: #fff;
+}
+footer section .ft_top {
+    padding-top: 90px;
+    display: flex;
+}
+footer section .ft_top a {}
+footer section .ft_top a img {
+    width: 134px;
+    line-height: 39px;
+}
+footer section .ft_top .ft_menu {
+    display: flex;
+}
+footer section .ft_top .ft_menu ul {
+    padding-left: 100px;
+}
+footer section .ft_top .ft_menu ul h2 {
+    padding-bottom: 37px;
+}
+footer section .ft_top .ft_menu ul li {
+    line-height: 220%;
+}
+footer section .ft_top .ft_menu ul li > a {
+    color: #fff
+}
+footer section .ft_top .ft_icon {
+    padding-left: 205px;
+}
+footer section .ft_top .ft_icon a {
+}
+footer section .ft_top .ft_icon a img {
+    width: 50px; height: 50px;
+}
+footer section .ft_btm {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 76px;
+}
+footer section .ft_btm .btm_left {
+    
+}
+footer section .ft_btm .btm_left a {
+    color: #fff;
+    margin-right: 20px;
+}
+footer section .ft_btm .copy {}
